@@ -23,6 +23,46 @@
         "12.04",
         "14.04"
       ]
+    },
+    ,
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "AmazonLinux",
+      "operatingsystemrelease": [
+        "2015.03",
+        "2014.09",
+        "2014.03"
+      ]
     }
   ],
   "dependencies": [
