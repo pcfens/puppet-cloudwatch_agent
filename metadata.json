@@ -1,0 +1,38 @@
+{
+  "name": "pcfens-cloudwatch",
+  "version": "0.1.0",
+  "author": "pcfens",
+  "license": "Apache-2.0",
+  "summary": "A module to and manage the AWS Cloudwatch client.",
+  "source": "https://github.com/pcfens/puppet-cloudwatch",
+  "project_page": "https://github.com/pcfens/puppet-cloudwatch",
+  "issues_url": "https://github.com/pcfens/puppet-cloudwatch/issues",
+  "tags": ["aws", "cloudwatch"],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5.0",
+        "6.0",
+        "7.0"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04"
+      ]
+    }
+  ],
+  "dependencies": [
+  {
+    "name": "puppetlabs/stdlib",
+    "version_requirement": ">=4.4.0 <5.0.0"
+  },
+  {
+    "name": "puppetlabs/concat",
+    "version_requirement": ">=1.0.0 <2.0.0"
+  }
+]
+}
