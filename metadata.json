@@ -1,13 +1,13 @@
 {
-  "name": "pcfens-cloudwatch",
+  "name": "pcfens-cloudwatch_agent",
   "version": "0.1.0",
   "author": "pcfens",
   "license": "Apache-2.0",
   "summary": "A module to and manage the AWS Cloudwatch client.",
-  "source": "https://github.com/pcfens/puppet-cloudwatch",
-  "project_page": "https://github.com/pcfens/puppet-cloudwatch",
-  "issues_url": "https://github.com/pcfens/puppet-cloudwatch/issues",
-  "tags": ["aws", "cloudwatch"],
+  "source": "https://github.com/pcfens/puppet-cloudwatch_agent",
+  "project_page": "https://github.com/pcfens/puppet-cloudwatch_agent",
+  "issues_url": "https://github.com/pcfens/puppet-cloudwatch_agent/issues",
+  "tags": ["aws", "cloudwatch", "awslogs"],
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",

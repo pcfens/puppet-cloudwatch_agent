@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'cloudwatch', :type => :class do
+describe 'cloudwatch_agent', :type => :class do
 
   let :facts do
     {
@@ -9,7 +9,7 @@ describe 'cloudwatch', :type => :class do
   end
 
   context 'defaults' do
-    it { is_expected.to contain_cloudwatch__params }
+    it { is_expected.to contain_cloudwatch_agent__params }
     it { is_expected.to contain_package('curl') }
     it { is_expected.to contain_exec('install-awslogs') }
     it { is_expected.to contain_concat('awslogs.conf').with(
@@ -51,7 +51,7 @@ describe 'cloudwatch', :type => :class do
       }
     end
 
-    it { is_expected.to contain_cloudwatch__log('/var/log/syslog') }
+    it { is_expected.to contain_cloudwatch_agent__log('/var/log/syslog') }
   end
 
 end

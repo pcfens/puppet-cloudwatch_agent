@@ -1,4 +1,4 @@
-define cloudwatch::log (
+define cloudwatch_agent::log (
   $ensure           = 'present',
   $file             = $name,
   $datetime_format  = '%b %d %H:%M:%S',

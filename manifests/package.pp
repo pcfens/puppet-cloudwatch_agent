@@ -1,7 +1,7 @@
 class cloudwatch::package {
-  if $cloudwatch::package_install {
+  if $cloudwatch_agent::package_install {
     package { 'awslogs':
-      ensure => $cloudwatch::package_ensure,
+      ensure => $cloudwatch_agent::package_ensure,
     }
   } else {
     if !defined(Package['curl']){
@@ -16,8 +16,8 @@ class cloudwatch::package {
     }
 
     exec { 'install-awslogs':
-      command => 'env && curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py |\
-        python - -r us-east-1 -n -c /tmp/aws.conf',
+      command => "env && curl ${installer_url} |\
+        python - -r ${region} -n -c /tmp/aws.conf",
       creates => '/var/awslogs/etc/aws.conf',
       cwd     => '/tmp',
       path    => ['/usr/bin', '/usr/local/sbin', '/usr/sbin', '/sbin', '/bin'],

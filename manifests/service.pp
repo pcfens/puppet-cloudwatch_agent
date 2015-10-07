@@ -1,6 +1,6 @@
-class cloudwatch::service {
+class cloudwatch_agent::service {
   service { 'awslogs':
-    ensure => $cloudwatch::service_ensure,
-    enable => $cloudwatch::service_enable,
+    ensure => $cloudwatch_agent::service_ensure,
+    enable => $cloudwatch_agent::service_enable,
   }
 }
