@@ -65,13 +65,13 @@ cloudwatch_agent::log { '/var/log/syslog':
 
 #### Public Classes
 
-* [`cloudwatch_agent`](#cloudwatch_agent): Installs the cloudwatch log agent
+* `cloudwatch_agent`: Installs the cloudwatch log agent
 
 #### Private Classes
 
-* [`cloudwatch_agent::config`](#cloudwatch_agent_config): Sets the awslogs service configuration
-* [`cloudwatch_agent::package`](#cloudwatch_agent_package): Install the agent package
-* [`cloudwatch_agent::service`](#cloudwatch_agent_service): Manage the awslogs service
+* `cloudwatch_agent::config`: Sets the awslogs service configuration
+* `cloudwatch_agent::package`: Install the agent package
+* `cloudwatch_agent::service`: Manage the awslogs service
 
 ### Parameters
 
