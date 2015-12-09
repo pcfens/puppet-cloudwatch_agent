@@ -1,6 +1,6 @@
 {
   "name": "pcfens-cloudwatch_agent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "pcfens",
   "license": "Apache-2.0",
   "summary": "A module to and manage the AWS Cloudwatch log agent.",
